@@ -6,3 +6,29 @@ h1{
     color: blue;
     font-family: 'Times New Roman', Times, serif;
 }
+#negrilla{
+    font-weight: bold;
+}
+
+#cabecera{
+    background-color: cornflowerblue;
+    width: 100vw;
+    height: 50vh;
+}
+
+body{
+    margin: 5px;
+}
+
+#conTexto{
+    background-color: blueviolet;
+    width: 50%;
+    height: 100%;
+}
+
+#contImagen{
+    background-color: cyan;
+    width: 50%;
+    height: 50%;
+    float: right;
+}
