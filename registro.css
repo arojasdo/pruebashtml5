@@ -1,0 +1,32 @@
+header{
+    text-align: center;
+}
+
+table, tr, th, td{
+    border: 1px solid black;
+}
+table{
+    width: 100%;
+}
+
+#formulario{
+    width: 50%;
+    float: left;
+}
+#contTabla{
+    width: 50%;
+    float: right;
+}
+
+#btnRegistro{
+    width: 6rem;
+    background-color: rgb(25, 137, 235);
+    padding: 0.5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#btnRegistro:hover{
+    color: orange;
+}

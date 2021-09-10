@@ -1,43 +1,62 @@
 h1{
-    color: rgb(0, 139, 35);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: orange;
+    font-family: cursive;
 }
+
 #titulo{
-    color: blue;
-    font-family: fantasy;
-    font-weight: bold;
+    color: green;
+    font-family: Arial, Helvetica, sans-serif;
 }
-#negrilla{
+/*Clase en css*/
+.negrilla{
     font-weight: bold;
 }
 
 #cabecera{
-    background-color: cornflowerblue;
-    width: 100vw;
-    height: 50vh;
+    /*background-color: red;*/
+    width: 100vw;/*ancho de la pantalla*/
+    height: 35vh;/*35% del alto de la pantalla*/
     overflow: hidden;
-    padding-top: 0px;
 }
+
 
 body{
-    margin: 5px;
+    margin: 0px;
 }
 
-#conTexto{
-    background-color: blueviolet;
+#contTexto{
+    /*background-color: yellow;*/
     width: 50%;
     height: 100%;
     float: left;
+    text-align: center;
+    padding-top: 60px;
 }
 
 #contImagen{
-    background-color: cyan;
+    /*background-color: green;*/
     width: 50%;
     height: 100%;
-    float: left;
-    
+    float: right;
 }
 
-table,tr,td,th{
+#contImagen img{
+    margin-left: 50px;
+}
+
+#tituloCabecera{
+    font-size: 4rem;
+}
+
+#subtitulo{
+    font-size: 2.5rem;
+    /*
+    em, pt
+    */
+}
+table, tr, td, th{
     border: 1px solid black;
+}
+table{
+    width: 50%;
 }

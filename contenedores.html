@@ -1,57 +1,75 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+<!---Cabecera del documento-->
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>componentes</title>
+    <title>Contenedores</title>
+    <!------Cargar la hoja de estilo----->
     <link rel="stylesheet" href="estilos.css">
-
 </head>
+<!--Cuerpo del documento-->
 
 <body>
 
-    <h1>Título</h1>
-    <h1 id="titulo">Título</h1>
-    <p id="negrilla">
-        <span class="negrilla">Lorem ipsum dolor</span>sit amet consectetur adipisicing elit. <span
-            class="negrilla"></span>Maxime, iure suscipit optio modi a rem quo quam voluptates ipsa doloremque hic sit
-        at quis aliquid maiores autem saepe consectetur. Quod.
+    <h1 id="titulo">Contenedores</h1>
+    <h1>Titulo 2</h1>
+    <p>
+        <span class="negrilla">Lorem</span> ipsum dolor sit amet consectetur adipisicing elit. Explicabo, accusamus accusantium dolore est minima
+        aliquam veniam maxime autem deleniti ipsum repellat nemo? Dicta magni ratione molestias rem, quod adipisci et?
+        Lorem ipsum dolor sit <span class="negrilla">amet consectetur adipisicing elit</span>. Culpa eos cupiditate tempora quia sequi? Quae, quam
+        deserunt repellat officia pariatur facilis saepe consequatur. Iure porro iusto odit explicabo dignissimos
+        <span class="negrilla">accusantium!</span>
     </p>
-    <span class="negrilla"></span>
-    <!--CONTENEDORES-->
+    <span class="negrilla">Esto es un span</span>
+    <br>
+    <label class="negrilla">Esto es un label</label>
 
-    <!--contenedor cabecera-->
+    <!----------CONTENEDORES------>
+
+    <!-------Contenedor Cabecera---->
     <div id="cabecera">
-        <div id="conTexto">
-            <span id="titulo">MisionTic2022</span>
+        <!------Contenedor hijo 1------>
+        <div id="contTexto">
+            <span id="tituloCabecera" class="negrilla">MisionTic 2022</span>
             <br>
+            <span id="subtitulo" class="negrilla">UPB</span>
+        </div>
+        <!------Contenedor hijo 2---->
+        <div id="contImagen">
+            <img src="https://res.cloudinary.com/dzxqhkyqd/image/upload/v1554871230/planet-express.png" />
         </div>
     </div>
 
-    <!--Imagenes-->
-    <div id="contImagen">
-        <img src="https://www.online-image-editor.com/styles/2019/images/power_girl.png">
-    </div>
-    
-    <!---tablas-->
+    <!-------Contenedor Cuerpo------>
     <div id="cuerpo">
+        <!----Tabla---->
         <table>
+            <!---fila---->
             <tr>
-                <td id="negrilla">Nombre</td>
-                <td id="negrilla">Apellido</td>
-                <td id="negrilla">Telefono</td>
+                <!----Cabeceras---->
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Email</th>
+                <th>Teléfono</th>
             </tr>
+            <!---fila---->
             <tr>
-                <td>Columna 1</td>
-                <td>Columna 2</td>
-                <td>Columna 3</td>
+                <!-----Columnas---->
+                <td>Andres</td>
+                <td>Quintero</td>
+                <td>andres@gmail.com</td>
+                <td>123456</td>
             </tr>
+            <!---fila---->
             <tr>
-                <td>Columna 1</td>
-                <td>Columna 2</td>
-                <td>Columna 3</td>
+                <!-----Columnas---->
+                <td>Juan</td>
+                <td>Perez</td>
+                <td>juan@gmail.com</td>
+                <td>9876</td>
             </tr>
         </table>
     </div>
