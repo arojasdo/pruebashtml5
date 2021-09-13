@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*
+body{
+    }
+*/
+
+#granContenedor{
+    width: 1200px;
+    height: 1000px;
+    background-color: aqua;
+    margin: 0.5em auto;
+    padding: 0.5em;
+}
+/* se trabaja con porcentajes del gran contenerdor*/
+
+#header{
+    height: 20%;
+    background-color: #a4a4a4;
+    border-radius: 1em;
+    margin: 1em; /*los margenes son hacia afuera del elemento*/
+}
+
+#nav{
+    height: 10%;
+    background-color: coral;
+    border-radius: 1em;
+    margin: 1em;
+}
+
+#contenido{
+    height: 50%;
+    background-color: burlywood;
+    margin: 1em;
+}
+
+#footer{
+    height: 12%;
+    background-color: cornsilk;
+    border-radius: 1em;
+    margin: 1em;
+}
+/*estos elementos estan dentro de un contenedor padre*/
+#section{
+    height: 100%;
+    width: 68%;
+    background-color: cadetblue;
+    border-radius: 3em;
+    float: left;
+}
+/*para que los elementos queden a la par, ambos deben estar flotando*/
+#aside{
+    height: 100%;
+    width: 30%;
+    background-color: blue;
+    border-radius: 3em;
+    float: right;
+}
