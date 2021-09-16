@@ -1,0 +1,27 @@
+header ul{
+    background-color: rgb(17, 20, 19);
+    list-style-type: none; /*para quitar los valores por defecto de las listas*/
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+header ul li{
+    float: right;
+    margin: 10px 10px;
+}
+
+header ul li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    display: block;
+}
+
+header ul li a:hover{
+    background-color: rgb(243, 255, 73);
+    color: black;
+}
+
+body{
+    margin: 0;
+}

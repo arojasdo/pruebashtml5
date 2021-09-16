@@ -1,0 +1,53 @@
+#s1 div{
+    border: 2px solid green;
+    width: 300px;
+    display: inline-block;
+}
+
+#s1 p{
+    margin: 0px;
+}
+/*
+#s1 div, #s2 div{
+    border: 2px solid green;
+    width: 300px;
+    display: inline-block;
+}
+*/
+#s2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#s3, #parrafo_1, #parrafo_2, #parrafo_3{
+    font-size: 1.2rem;
+}
+/*modelo en cascada*/
+#parrafo_4{
+    color: brown;
+}
+
+#parrafo_4{
+    stop-color: blue;
+    font-style: italic;
+
+}
+
+#s4{
+    background-color: coral;
+    width: 100px;
+    margin-left: 500px;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+#s4 div{
+    text-align: center;
+    
+}
+
+#s4 div:hover{
+    color:blueviolet;
+    background-color: aquamarine;
+    
+}

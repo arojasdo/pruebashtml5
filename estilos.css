@@ -60,3 +60,16 @@ table, tr, td, th{
 table{
     width: 50%;
 }
+
+.boton{
+    width: 250px; height: 50px;
+    border-radius: 10px;
+    background-color: chartreuse;
+    cursor: pointer;
+    transition: background-color 0.5s;
+
+}
+
+.boton:hover{
+    background-color: darkgreen;
+}

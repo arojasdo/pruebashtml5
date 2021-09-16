@@ -1,0 +1,40 @@
+/*posiciones absolutas*/
+#img1{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+#img2{
+    position: absolute;
+    top: 50px;
+    right:  50px;
+}
+
+#img3{
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+}
+
+#img4{
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+}
+
+#img4{
+    animation: flotar 4s ease-in-out infinite;
+}
+/*para simular flotacion*/
+@keyframes flotar{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(020px);
+    }
+    100%{
+        transform: translateY();
+    }
+}
