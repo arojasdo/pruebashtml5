@@ -10,7 +10,15 @@ header {
     width: 100%;
     display: table;
     background-color: #86d466;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
+}
+
+section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0px auto;
+    display: table;
+    position: relative;
 }
 
 #logo {
@@ -19,7 +27,7 @@ header {
     text-transform: initial;
     color: #050505;
     font-weight: 600;
-    padding: 20px 0px;
+    padding: 20px 25px;
 }
 
 /*NAV*/
@@ -28,7 +36,7 @@ nav {
     position: absolute;
     right: 0px;
     top: 53px;
-    background-color: #002e5b;
+    background-color: #3f89dd;
     padding: 0px;
     z-index: 99;
 }
@@ -48,11 +56,12 @@ nav ul li a {
     display: block;
     border-bottom: 1px solid rgba(225, 225, 225, 0.1);
 }
+/*
 nav ul li a i {
-    color: #86d466;
+    color: #d46690;
     padding-right: 13px;
     }
-
+*/
 
 /*TOGLE*/
 .toggle-menu ul {
@@ -83,7 +92,7 @@ input[type="checkbox"]:fous {
 
 label {
     float: right;
-    padding: 8px 0px;
+    padding: 25px 25px;
     display: inline-block;
     cursor: pointer;
 }
@@ -91,3 +100,26 @@ input[type="checkbox"]:checked ~ nav {
     display: block;
 }
 
+#btn-registrar{
+    width: 125px; height: 50px;
+    border-radius: 10px;
+    background-color: rgb(127, 238, 169);
+    cursor: pointer;
+    transition: background-color 0.5s;
+    font-weight: bold;
+
+}
+
+#btn-registrar:hover{
+    background-color: darkgreen;
+}
+
+#contenido{
+    width: 100%;
+    height: 900px;
+    background-color: aquamarine;
+}
+
+#form-registro{
+    float: left;
+}
