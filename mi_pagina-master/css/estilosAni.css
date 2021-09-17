@@ -1,0 +1,68 @@
+#cabecera{
+    width: 100vw;
+    height: 300px;
+    background: aquamarine;
+    /*animation: cambiarColor 4s ease-in-out infinite;*/
+    animation: discoteca 4s ease-in-out infinite;
+}
+
+h1{
+    font-size: 4rem;
+    margin: 0px;
+    animation: mover 2s ease-in-out infinite;
+}
+
+/*********ANIMACIONES************/
+@keyframes cambiarColor {
+    from{
+        background-color: rgb(251, 255, 0);
+    }
+    to{
+        background-color: rgb(255, 145, 0);
+    }
+    to{
+        background-color: rgb(255, 30, 0);
+    }
+}
+
+@keyframes discoteca{
+    0%{
+        background-color: green;
+    }
+    20%{
+        background-color: yellow;
+    }
+    40%{
+        background-color: blue;
+    }
+    60%{
+        background-color: blueviolet;
+    }
+    80%{
+        background-color: darkorange;
+    }
+    100%{
+        background-color: rgb(226, 43, 156);
+    }
+}
+
+@keyframes mover {
+    0%{
+        transform: translateX(200px);
+    }
+    20%{
+        transform: translateY(180px);
+    }
+    40%{
+        transform: translateX(300px);
+    }
+    60%{
+        transform: translateY(180px);
+    }
+    60%{
+        transform: translateX(0px);
+    }
+    80%{
+        transform: translateX(180px) translateY(180px);
+    }
+}
