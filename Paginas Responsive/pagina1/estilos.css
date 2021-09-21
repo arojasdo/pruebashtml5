@@ -164,6 +164,13 @@ input {
     font-weight: bold;
 }
 
+#btn-registrar{
+    background-color: chartreuse;
+}
+
+#enlace-registro{
+    text-decoration: none;
+}
 /*REAJUSTES RESPONSIVES*/
 
 @media only screen and (max-width: 1440px) {
