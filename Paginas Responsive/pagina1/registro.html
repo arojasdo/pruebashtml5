@@ -15,10 +15,10 @@
             <h1>Registro</h1>
         </header>
         <br>
-        <form action="" id="form-registro">
+        <form action="" id="form-registro" onsubmit="return checkTelefono()">
             <label for="nombre">Nombre</label>
             <br>
-            <input type="text" id="usuario" name="usuario" />
+            <input type="text" id="nombre" name="nombre" />
             <br>
             <br>
             <br>
@@ -31,7 +31,6 @@
                 <input type="radio" id="masc" name="genero" value="M">
                 <label for="masculino">M</label>
             </div>
-
             <br>
             <label for="tel">Telefono</label>
             <br>
@@ -55,7 +54,9 @@
             <br>
             <input type="submit" id="btn-submit-form" value="Registrar" />
         </form>
+        
     </Section>
+    <script src="forms.js"></script>
 </body>
 
 </html>
