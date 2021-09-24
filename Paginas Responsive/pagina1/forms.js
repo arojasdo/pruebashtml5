@@ -42,7 +42,7 @@ function checkDir() {
 	}
 }
 
-function checkEmail() {
+function checkCorreo() {
 	valorEmail = document.getElementById('email').value;
 	if(valorEmail == null || valorEmail.length == 0 || !/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/.exec(valorEmail)) {
 		console.log("Datos incorrectos");
@@ -80,6 +80,11 @@ function checkGenero() {
 		}
 }
 
+module.exports = checkNombre;
+module.exports = checkTelefono;
+module.exports = checkDir;
+module.exports = checkCorreo;
+module.exports = checkContrasena;
 
 
 /** /^\s+$/.test(valor) */
