@@ -80,11 +80,9 @@ function checkGenero() {
 		}
 }
 
-module.exports = checkNombre;
-module.exports = checkTelefono;
-module.exports = checkDir;
-module.exports = checkCorreo;
-module.exports = checkContrasena;
+/*
+module.exports = {checkNombre, checkTelefono, checkDir, checkCorreo, checkContrasena};
+*/
 
 
 /** /^\s+$/.test(valor) */
