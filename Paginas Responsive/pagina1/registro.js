@@ -1,36 +1,53 @@
-const array = [];
-
+var registros = [];
 
 function agregarRegistro(){
-    this.nombre = document.getElementById('nombre').value;
-    this.genero = document.getSelection('nombre').value;
-    this.telefono = document.getElementById('telefono').value;
-    this.direccion = document.getElementById('direccion').value;
-    this.correo = document.getElementById('correo').value;
-    this.pass = document.getElementById('pass').value;
-    /*
-    this.nombre = nombre;
-    this.genero = genero;
-    this.telefono = telefono;
-    this.direccion = direccion;
-    this.correo = correo;
-    this.pass = pass;
-    */
-    console.log("nombre: "+nombre+" Género: "+genero+"Teléfono: "+telefono+"Dirección"+direccion+"Correo: "+correo+"Paswword: "+pass);
+    let nombre = document.getElementById('nombre').value;
+    let telefono = document.getElementById('telefono').value;
+    let direccion = document.getElementById('direccion').value;
+    let correo = document.getElementById('correo').value;
+    let contrasena = document.getElementById('contrasena').value;
 
-    let tempo = [];
-    tempo.push(this.nombre);
-    tempo.push(this.genero);
-    tempo.push(this.telefono);
-    tempo.push(this.direccion);
-    tempo.push(this.correo);
-    tempo.push(this.pass);
+    let usuario = {
+        nombre: nombre,
+        telefono: telefono,
+        direccion: direccion,
+        correo: correo,
+        contrasena: contrasena
+    };
 
-    array.push(tempo);
-
-    console.log(array);
+    console.log(usuario);
+    registros.push(usuario);
 }
 
-/*
-module.exports={agregarRegistro};
-*/
+function ordenarArreglo(arreglo){
+    let ordenar = arreglo.sort(function (a, b){
+        if (a.nombre > b.nombre) {
+            return 1;
+        }
+        if (a.nombre < b.nombre){
+            return -1;
+        }
+        return 0;
+    });
+    console.log(ordenar);
+    return ordenar;
+}
+
+function filtrarCampo(){
+    const correofiltrado = arreglo.filter(element => {
+        if (/^[a-zA-Z0-9_.+-]+@gmail.com/.test(element.correo)){
+            return true;
+        }else{
+            return false;
+        }
+    });
+}
+
+console.log(correofiltrado);
+
+module.exports = {
+    agregarRegistro,
+    ordenarArreglo,
+    filtrarCampo,
+    registros
+}
