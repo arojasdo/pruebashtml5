@@ -19,7 +19,7 @@ function agregarRegistro(){
     registros.push(usuario);
 }
 
-function ordenarArreglo(arreglo){
+function ordenarArreglo(){
     let ordenar = arreglo.sort(function (a, b){
         if (a.nombre > b.nombre) {
             return 1;
@@ -33,7 +33,7 @@ function ordenarArreglo(arreglo){
     return ordenar;
 }
 
-function filtrarCampo(){
+function filtrarCorreo(){
     const correofiltrado = arreglo.filter(element => {
         if (/^[a-zA-Z0-9_.+-]+@gmail.com/.test(element.correo)){
             return true;
@@ -41,13 +41,16 @@ function filtrarCampo(){
             return false;
         }
     });
+    console.log(correofiltrado);
+    return correofiltrado;
 }
+
 
 console.log(correofiltrado);
 
 module.exports = {
     agregarRegistro,
     ordenarArreglo,
-    filtrarCampo,
+    filtrarCorreo,
     registros
 }
