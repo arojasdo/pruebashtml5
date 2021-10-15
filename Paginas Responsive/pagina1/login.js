@@ -2,6 +2,7 @@ let registros = [];
 
 function login(){
     validarCAPTCHA();
+    /*aqui se podria implementar un if{}else{} dependiendo del retorno de validarCAPTCHA()*/
 }
 
 function agregarRegistro(){
@@ -26,21 +27,21 @@ function agregarRegistro(){
 function validarCAPTCHA(captcha){
     let resp = 'ocaso'
     let respUs = document.getElementById('captcha').value;
-    let deletSimbolos = respUs.replace(/[^a-zA-Z0-9]/);
-    if (resp == deletSimbolos){
+    let minusculas = respUs.toLowerCase(); //PASA TODO A MINUSCULAS
+    let valorLimpio = minusculas.replace(/[^a-zA-Z ]/g, ""); //ELIMINA TODOS LOS CARACTERES ESPECIALES
+    if (resp == valorLimpio){
         console.log("correcto")
         return true;
     }else{
-        console.log("Fallaste")
+        console.log("Respuesta incorrecta")
         return false;
     }
 }
 
-/*
+
 module.exports = {
     login,
     validarCAPTCHA,
     agregarRegistro,
     registros
 }
-*/
